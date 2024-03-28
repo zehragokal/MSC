@@ -3,14 +3,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.msc-logo {
+.msc-logo-spin {
   height: 40vmin;
   pointer-events: none;
   padding: 5vmin;
 }
 
+.msc-logo {
+  height: 10vmin;
+  pointer-events: none;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .msc-logo {
+  .msc-logo-spin {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -43,4 +50,9 @@
 
 .navbar {
   background-color: #0c223f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-item {
+  padding: 2vmin;
 }

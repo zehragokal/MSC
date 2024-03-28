@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import mscLogo from "./images/mscLogo.png";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="!#">
-          MSC
-        </a>
+        <NavLink to="/" className="navbar-brand">
+          <img src={mscLogo} className="msc-logo" alt="logo" />
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,24 +23,24 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="!#">
+              <NavLink to="/" className="nav-link">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="!#">
+              <NavLink to="/about-us" className="nav-link">
                 About Us
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="!#">
+              <NavLink to="/our-community" className="nav-link">
                 Our Community
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
                 href="!#"
+                className="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -47,19 +49,19 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="!#">
+                  <NavLink to="/summit" className="dropdown-item">
                     Summit
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="!#">
+                  <NavLink to="/retreat" className="dropdown-item">
                     Retreat
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="!#">
+                  <NavLink to="/conference" className="dropdown-item">
                     Conference
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
