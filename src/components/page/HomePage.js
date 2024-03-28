@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <header className="App-header">
+      <header className="App-header-home">
         <img src={mscLogo} className="msc-logo-spin" alt="logo" />
         Welcome to the MSC site!
       </header>

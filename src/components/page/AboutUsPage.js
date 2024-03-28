@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../Navbar";
-import mscLogo from "../images/mscLogo.png";
+import ImageCarousel from "../ImageCarousel";
+import Footer from "../Footer";
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <div className="page">
       <Navbar />
-      <header className="App-header">
-        <img src={mscLogo} className="msc-logo-spin" alt="logo" />
-        About Us
-      </header>
+      <header className="App-header">About Us</header>
+      <ImageCarousel />
+      <Footer />
     </div>
   );
 };

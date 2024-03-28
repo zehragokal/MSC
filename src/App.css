@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  background-color: #0c223f;
+}
+
+.footer {
+  background-color: #0c223f;
 }
 
 .msc-logo-spin {
@@ -22,15 +26,27 @@
   }
 }
 
-.App-header {
+.App-header-home {
   background-color: #113059;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(10px + 2vmin);
-  font-weight: 600;
+  color: white;
+}
+
+.App-header {
+  background-color: #113059;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -55,4 +71,8 @@
 
 .nav-item {
   padding: 2vmin;
+}
+
+.body-image {
+  max-width: 40%;
 }

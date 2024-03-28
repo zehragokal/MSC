@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../Navbar";
-import mscLogo from "../images/mscLogo.png";
+import group from "../images/group.JPG";
 
 const OurCommunityPage = () => {
   return (
     <div>
       <Navbar />
       <header className="App-header">
-        <img src={mscLogo} className="msc-logo-spin" alt="logo" />
         Our Community
+        <img src={group} className="body-image" alt="group" />
       </header>
     </div>
   );

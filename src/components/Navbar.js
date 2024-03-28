@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import mscLogo from "./images/mscLogo.png";
 
-const Header = () => {
+const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
@@ -72,4 +72,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
