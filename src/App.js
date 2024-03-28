@@ -1,12 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import mscLogo from "./images/mscLogo.png";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        Website Test
+        <img src={mscLogo} className="msc-logo" />
+        Welcome to the MSC site!
       </header>
     </div>
   );
