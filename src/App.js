@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={mscLogo} className="msc-logo" />
+        <img src={mscLogo} className="msc-logo" alt="logo" />
         Welcome to the MSC site!
       </header>
     </div>
