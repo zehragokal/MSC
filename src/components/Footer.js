@@ -1,49 +1,125 @@
 import React from "react";
-import mscLogo from "./images/mscLogo.png";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div className="col-md-4 d-flex align-items-center">
+    <footer className="container-fluid bg-body-tertiary text-center p-0 m-0">
+      <div
+        className="container-fluid p-4 pb-1"
+        style={{
+          backgroundColor: "#0c223f",
+        }}
+      >
+        <div
+          className="contact-us pb-3"
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Montserrat, sans-serif",
+            lineHeight: "2",
+          }}
+        >
+          <strong style={{ fontWeight: "bold" }}>Contact Us</strong>
+          <br />
           <a
-            href="/"
-            className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            href="mailto:secretary@themsc.co.uk"
+            style={{
+              color: "#FFFFFF",
+              textDecoration: "none",
+              transition: "color 0.3s ease",
+            }}
+            onMouseEnter={(e) => (e.target.style.color = "#2563b4")}
+            onMouseLeave={(e) => (e.target.style.color = "#FFFFFF")}
           >
-            <svg className="bi" width="30" height="24">
-              <img src={mscLogo} className="msc-logo" alt="logo" />
-            </svg>
+            secretary@themsc.co.uk
           </a>
-          <span className="mb-3 mb-md-0 text-muted">
-            © 2024 Muslim Student Council
-          </span>
+          <br />
+          <i
+            className="fa fa-instagram fa-lg"
+            style={{ paddingRight: "15px" }}
+            aria-hidden="true"
+          ></i>
+          <a
+            href="https://www.instagram.com/absoc_uk"
+            style={{
+              color: "#FFFFFF",
+              textDecoration: "none",
+              transition: "color 0.3s ease",
+            }}
+            onMouseEnter={(e) => (e.target.style.color = "#2563b4")}
+            onMouseLeave={(e) => (e.target.style.color = "#FFFFFF")}
+          >
+            @absoc_uk
+          </a>
         </div>
-
-        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li className="ms-3">
-            <a className="text-dark" href="!#">
-              <svg className="bi" width="24" height="24">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </svg>
-            </a>
-          </li>
-          <li className="ms-3">
-            <a className="text-muted" href="!#">
-              <svg className="bi" width="24" height="24">
-                <i className="fa fa-instagram" aria-hidden="true"></i>
-              </svg>
-            </a>
-          </li>
-          <li className="ms-3">
-            <a className="text-muted" href="!#">
-              <svg className="bi" width="24" height="24">
-                <i className="fa fa-facebook-official" aria-hidden="true"></i>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+        <section className="mb-3">
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating m-1"
+            style={{ backgroundColor: "#3b5998" }}
+            href="https://www.facebook.com/MSCUK/?locale=en_GB"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+          >
+            <i className="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating m-1"
+            style={{ backgroundColor: "#55acee" }}
+            href="https://twitter.com/absoc?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+          >
+            <i className="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating m-1"
+            style={{ backgroundColor: "#dd4b39" }}
+            href="https://www.youtube.com/user/MuslimStudentCouncil"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+          >
+            <i className="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating m-1"
+            style={{ backgroundColor: "#ac2bac" }}
+            href="https://www.instagram.com/absoc_uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+          >
+            <i className="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            data-mdb-ripple-init
+            className="btn text-white btn-floating m-1"
+            style={{ backgroundColor: "#0082ca" }}
+            href="https://www.linkedin.com/company/muslim-student-council/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+          >
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </section>
+      </div>
+      <div
+        className="text-center p-3"
+        style={{
+          backgroundColor: "#113059",
+          color: "#FFFFFF",
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: "12px",
+        }}
+      >
+        © 2024 Muslim Student Council
+      </div>
+    </footer>
   );
 };
 export default Footer;

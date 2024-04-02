@@ -5,16 +5,35 @@ import mscHands from "./images/mscHands.JPG";
 
 const ImageCarousel = () => {
   return (
-    <div className="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div
+      className="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-pause="false"
+    >
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={rameez} className="d-block w-100" alt="rameez" />
+          <img
+            src={rameez}
+            className="d-block"
+            style={{ maxWidth: "720px" }}
+            alt="rameez"
+          />
         </div>
         <div className="carousel-item">
-          <img src={maryam} className="d-block w-100" alt="maryam" />
+          <img
+            src={maryam}
+            className="d-block"
+            style={{ maxWidth: "720px" }}
+            alt="maryam"
+          />
         </div>
         <div className="carousel-item">
-          <img src={mscHands} className="d-block w-100" alt="funny" />
+          <img
+            src={mscHands}
+            className="d-block"
+            style={{ maxWidth: "720px" }}
+            alt="funny"
+          />
         </div>
       </div>
     </div>

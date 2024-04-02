@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const SummitPage = () => {
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <header className="App-header">Summit</header>
+      <Footer />
     </div>
   );
 };
