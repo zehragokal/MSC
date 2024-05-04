@@ -15,7 +15,7 @@ const AboutUsPage = () => {
           </div>
           <div class="col-sm-5 d-flex align-items-center body-text">
             <div>
-              <h1>What this text is about.</h1>
+              <h1>Our Mission</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -25,6 +25,8 @@ const AboutUsPage = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+              <h1>Who We Are</h1>
+              <h1>What We Do</h1>
             </div>
           </div>
         </div>

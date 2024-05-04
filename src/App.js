@@ -9,6 +9,7 @@ import OurCommunityPage from "./components/page/OurCommunityPage";
 import RetreatPage from "./components/page/RetreatPage";
 import SummitPage from "./components/page/SummitPage";
 import ConferencePage from "./components/page/ConferencePage";
+import NotFoundPage from "./components/page/NotFoundPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/retreat" element={<RetreatPage />} />
         <Route path="/summit" element={<SummitPage />} />
         <Route path="/conference" element={<ConferencePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
