@@ -1,16 +1,14 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import mscLogo from "../images/mscLogo.png";
+import HomeCarousel from "../HomeCarousel";
 
 const HomePage = () => {
   return (
     <div className="page">
       <Navbar />
-      <header className="App-header-home">
-        <img src={mscLogo} className="msc-logo-spin" alt="logo" />
-        Welcome to the MSC site!
-      </header>
+      <header className="App-header-home">Welcome to the MSC site!</header>
+      <HomeCarousel />
       <Footer />
     </div>
   );
