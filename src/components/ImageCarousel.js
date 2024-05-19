@@ -15,7 +15,7 @@ const ImageCarousel = () => {
           <img
             src={rameez}
             className="d-block"
-            style={{ maxWidth: "720px" }}
+            style={{ width: "100%", maxWidth: "720px" }}
             alt="rameez"
           />
         </div>
@@ -23,7 +23,7 @@ const ImageCarousel = () => {
           <img
             src={maryam}
             className="d-block"
-            style={{ maxWidth: "720px" }}
+            style={{ width: "100%", maxWidth: "720px" }}
             alt="maryam"
           />
         </div>
@@ -31,7 +31,7 @@ const ImageCarousel = () => {
           <img
             src={mscHands}
             className="d-block"
-            style={{ maxWidth: "720px" }}
+            style={{ width: "100%", maxWidth: "720px" }}
             alt="funny"
           />
         </div>
