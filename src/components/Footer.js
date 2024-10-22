@@ -117,7 +117,7 @@ const Footer = () => {
           fontSize: "12px",
         }}
       >
-        © 2024 Muslim Student Council
+        𝓏𝑔 © 2024 Muslim Student Council
       </div>
     </footer>
   );

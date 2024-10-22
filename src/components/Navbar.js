@@ -28,13 +28,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/about-us" className="nav-link">
-                About Us
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/our-community" className="nav-link">
-                Our Community
+              <NavLink to="/who-we-are" className="nav-link">
+                Who We Are
               </NavLink>
             </li>
             <li className="nav-item dropdown">
@@ -45,25 +40,38 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Events
+                What We Do
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <NavLink to="/summit" className="dropdown-item">
-                    Summit
+                  <NavLink to="/council-gatherings" className="dropdown-item">
+                    Council Gatherings
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/retreat" className="dropdown-item">
-                    Retreat
+                  <NavLink to="/resource-support" className="dropdown-item">
+                    Resource Support
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/conference" className="dropdown-item">
-                    Conference
+                  <NavLink
+                    to="/regional-training-days"
+                    className="dropdown-item"
+                  >
+                    Regional Training Days
                   </NavLink>
                 </li>
               </ul>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/our-community" className="nav-link">
+                Our Community
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/shop" className="nav-link">
+                Shop
+              </NavLink>
             </li>
           </ul>
         </div>

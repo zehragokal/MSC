@@ -9,6 +9,7 @@ const ImageCarousel = () => {
       className="carousel slide carousel-fade"
       data-bs-ride="carousel"
       data-bs-pause="false"
+      data-bs-interval="2500"
     >
       <div className="carousel-inner">
         <div className="carousel-item active">

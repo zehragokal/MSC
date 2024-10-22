@@ -1,20 +1,34 @@
 import React from "react";
-import mscLogo from "./images/mscLogo.png";
 
-const Society = () => {
+const Society = ({ name, logo, link }) => {
   return (
-    <div>
-      <div>
-        <img
-          src={mscLogo}
-          className="msc-logo"
-          alt="logo"
-          style={{ margin: "3%", height: "15vmin" }}
-        />
-      </div>
-      <div>
-        <h4>Society Name</h4>
-      </div>
+    <div
+      style={{
+        display: "inline-block", // Keeps the component inline
+        transition: "transform 0.3s", // Smooth transition for hover effect
+      }}
+      onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")} // Enlarge on hover
+      onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")} // Return to original size
+    >
+      <a href={link} style={{ textDecoration: "none", color: "inherit" }}>
+        <div>
+          <img
+            src={logo}
+            alt="logo"
+            style={{
+              margin: "3%",
+              height: "15vmin",
+              borderRadius: "15px", // Rounds the corners
+              transition: "transform 0.3s", // Smooth transition for hover effect
+            }}
+          />
+        </div>
+        <div>
+          <h4 style={{ transition: "transform 0.3s", marginTop: "10px" }}>
+            {name}
+          </h4>
+        </div>
+      </a>
     </div>
   );
 };

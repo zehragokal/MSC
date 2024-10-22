@@ -2,16 +2,15 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-const NotFoundPage = () => {
+const ShopPage = () => {
   return (
     <div className="page">
       <Navbar />
-      <header className="App-header" style={{ fontSize: "20px" }}>
-        Error 404: Page Not Found
-      </header>
+      <header className="App-header">Shop</header>
+      <p style={{ textAlign: "center", margin: "8%" }}>COMING SOON ... 👀</p>
       <Footer />
     </div>
   );
 };
 
-export default NotFoundPage;
+export default ShopPage;

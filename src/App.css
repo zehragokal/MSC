@@ -39,6 +39,15 @@
   --bs-btn-hover-border-color: #093d81
 }
 
+/* Who We Are Page */
+.aims-objectives-cards {
+  transition: transform 0.3s ease;
+}
+
+.aims-objectives-cards:hover {
+  transform: scale(1.1);
+}
+
 /* Our Community Page */
 .image-container {
   display: flex;
@@ -75,10 +84,114 @@
 
 /* Body Content */
 .body {
-  padding: 3%;
+  padding: 1%;
 }
 
 /* Body Text */
 .body-text {
   padding: 2%;
+}
+
+/*Map*/
+:root {
+  --color-background: rgb(26, 26, 26);
+  --color-highlight: rgb(217, 193, 255);
+  --color-highlight-light: rgb(217, 193, 255);
+  /* Lightened version */
+  --color-highlight-dark: rgb(223, 194, 247);
+  /* Darkened version */
+  --color-foreground: rgb(229, 229, 229);
+  /* Inverted color */
+  --map-dot-size: 40px;
+  --transition-time: 0.25s;
+}
+
+div,
+img,
+footer {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+/* Centering classes */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-y {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: small;
+}
+
+/* Distribution map styles */
+.distribution-map {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-width: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.distribution-map>img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.map-point {
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: var(--map-dot-size);
+  height: var(--map-dot-size);
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--transition-time) ease-in-out,
+    width var(--transition-time) ease-in-out,
+    height var(--transition-time) ease-in-out;
+  background: rgba(26, 26, 26, 0.8);
+  border: calc(var(--map-dot-size) / 8) solid var(--color-highlight-dark);
+}
+
+/* Initially hide the content */
+.map-point .content {
+  opacity: 0;
+  transition: opacity var(--transition-time) ease-in-out;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  color: white;
+  /* Hide overflow */
+}
+
+/* Show content on hover */
+.map-point:hover .content {
+  opacity: 1;
+  /* Make content visible on hover */
+}
+
+/* Adjust the size and opacity of the map point on hover */
+.map-point:hover {
+  opacity: 1;
+  /* Optional: make the point fully visible on hover */
+  width: 300px;
+  /* Adjust size on hover */
+  height: 220px;
+  /* Adjust size on hover */
+  z-index: 1;
+  /* Bring to front */
 }

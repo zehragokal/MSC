@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import HomeCarousel from "../HomeCarousel";
+import Map from "../Map";
+import FeaturedInstagramEmbed from "../FeaturedInstagramEmbed";
 
 const HomePage = () => {
   return (
@@ -10,8 +12,40 @@ const HomePage = () => {
       <HomeCarousel />
       <div>
         <header className="App-header" style={{ padding: "4%" }}>
-          <h3>"...Stand out firmly for justice</h3>
-          <p className="quote">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <Map />
+              </div>
+              <div
+                class="col-sm"
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <h2
+                  style={{
+                    marginBottom: "50px",
+                  }}
+                >
+                  📰 Featured
+                </h2>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FeaturedInstagramEmbed />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style={{ textAlign: "center", marginTop: "50px" }}>
+            "... STAND OUT FIRMLY FOR JUSTICE
+          </p>
+          <p className="quote" style={{ textAlign: "center" }}>
             ...though it may be against your own selves or your parents or near
             relatives and whether it be against rich or poor."
           </p>
